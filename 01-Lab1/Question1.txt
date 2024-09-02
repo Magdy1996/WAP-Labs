@@ -1,0 +1,24 @@
+Identify block vs. inline HTML elements:
+<div>, <span>, <p>, <h1/6>, <hr>,
+<br>, <img>, <a>, <ol>/<li>, <ul>/<li>, <table>/<tr>/<th>/<td>, <form>,
+<input>, <textarea>, <button>, <select>/<option>, <label>.
+
+Block-Level Elements:
+  1 -  <div>
+  2 -  <p>
+  3 -  <h1> to <h6>
+  4 -  <hr>
+  5 -  <ol> / <li>
+  6 -  <ul> / <li>
+  7 -  <table> / <tr> / <th> / <td>
+  8 -  <form>
+Inline Elements:
+  1-  <span>
+  2-  <br>
+  3-  <img>
+  4-  <a>
+  5-  <input>
+  6-  <textarea>
+  7-  <button>
+  8-  <select> / <option>
+  9-  <label>
