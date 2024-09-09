@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise One</title>
     <style>
-        /* CSS Reset */
         * {
             margin: 0;
             padding: 0;
@@ -50,6 +49,23 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
+        /* Button Styling */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #0077cc;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #005fa3;
+        }
+
         /* Footer Styling */
         footer {
             margin-top: 20px;
@@ -63,8 +79,9 @@
         <h2>The Question</h2>
         <img src="./meditiation.png" alt="Meditation Image"> 
 
+        
         <h2>The Solution</h2>
-        <img src="./meditation.js" alt="Solution Code">
+        <a href="https://github.com/Magdy1996/WAP-Labs/blob/main/05-Lab5/exercise1/meditation.ts" class="button-link">View the Solution</a>
     </div>
 
     <footer>
