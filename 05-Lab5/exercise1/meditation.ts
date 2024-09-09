@@ -21,7 +21,7 @@ class Meditation {
     }
   
     start() {
-      console.log('Start meditation');
+     
       const interval = setInterval(() => {
         if (this.minutes > 0) {
           console.log(this.minutes);
@@ -37,4 +37,5 @@ class Meditation {
 
   const morning_meditation = new Meditation(5);
   morning_meditation.start();
+ console.log('Start meditation');
   
