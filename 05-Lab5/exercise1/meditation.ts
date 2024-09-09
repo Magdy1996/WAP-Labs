@@ -21,7 +21,11 @@ class Meditation {
     }
   
     start() {
+<<<<<<< HEAD
       
+=======
+     
+>>>>>>> 635ce8ff5a54a95840fc3daeb00a2e1a44696831
       const interval = setInterval(() => {
         if (this.minutes > 0) {
           console.log(this.minutes);
@@ -37,5 +41,10 @@ class Meditation {
 
   const morning_meditation = new Meditation(5);
   morning_meditation.start();
+<<<<<<< HEAD
   console.log('Start meditation');
   
+=======
+ console.log('Start meditation');
+  
+>>>>>>> 635ce8ff5a54a95840fc3daeb00a2e1a44696831
