@@ -1,0 +1,1 @@
+const morning_meditation = new Meditation(5);
