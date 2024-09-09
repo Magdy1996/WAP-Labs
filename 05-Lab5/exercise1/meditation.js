@@ -19,7 +19,6 @@ var Meditation = /** @class */ (function () {
     }
     Meditation.prototype.start = function () {
         var _this = this;
-        console.log('Start meditation');
         var interval = setInterval(function () {
             if (_this.minutes > 0) {
                 console.log(_this.minutes);
@@ -35,3 +34,4 @@ var Meditation = /** @class */ (function () {
 }());
 var morning_meditation = new Meditation(5);
 morning_meditation.start();
+console.log('Start meditation');
