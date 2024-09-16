@@ -30,7 +30,7 @@ class Meditation {
           console.log('Jay Guru Dev');
           clearInterval(interval);
         }
-      }, 60 * 1000); // to represent One Minute
+      },  1000); // to represent One Minute
     }
   }
   

@@ -28,7 +28,7 @@ var Meditation = /** @class */ (function () {
                 console.log('Jay Guru Dev');
                 clearInterval(interval);
             }
-        }, 60 * 1000); // to represent One Minute
+        }, 1000); // to represent One Minute
     };
     return Meditation;
 }());
