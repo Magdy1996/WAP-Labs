@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: calc(100% - 22px);
+            display: block;
+        }
+        .user-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Users Page</h1>
+        <form id="userForm" action="/users" method="POST">
+            <input type="text" name="username" placeholder="Enter Username" required />
+            <input type="email" name="email" placeholder="Enter Email" required />
+            <button type="submit">Add User</button>
+        </form>
+        
+        <div class="user-list">
+            <h2>Existing Users:</h2>
+            <ul id="users">
+            
+            </ul>
+        </div>
+    </div>
+    <script>
+        const users = [
+            { username: 'Magdy Youakim 1', email: 'magdy@example.com' },
+            { username: 'Mark Youakm 2 ', email: 'mark@example.com' }
+        ];
+
+        const userList = document.getElementById('users');
+        users.forEach(user => {
+            const li = document.createElement('li');
+            li.textContent = `${user.username} - ${user.email}`;
+            userList.appendChild(li);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: calc(100% - 22px);
+            display: block;
+        }
+        .product-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Products Page</h1>
+        <form id="productForm" action="/products" method="POST">
+            <input type="text" name="productName" placeholder="Enter Product Name" required />
+            <input type="number" name="price" placeholder="Enter Price" required />
+            <button type="submit">Add Product</button>
+        </form>
+        
+        <div class="product-list">
+            <h2>Available Products:</h2>
+            <ul id="products">
+                
+            </ul>
+        </div>
+    </div>
+    <script>
+       
+        const products = [
+            { name: 'Laptop', price: '$999' },
+            { name: 'Smartphone', price: '$599' }
+        ];
+
+    
+        const productList = document.getElementById('products');
+        products.forEach(product => {
+            const li = document.createElement('li');
+            li.textContent = `${product.name} - ${product.price}`;
+            productList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
